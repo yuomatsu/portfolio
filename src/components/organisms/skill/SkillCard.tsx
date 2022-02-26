@@ -5,7 +5,7 @@ type Props = {
     children: ReactNode;
 };
 
-export const H2Text: VFC<Props> = memo((props) => {
+export const SkillCard: VFC<Props> = memo((props) => {
     const { children } = props;
     return <Text as="h2" fontSize={{ base: '1.0rem', md: "2.5rem"}} mt={{ base: 20, md: 50}}>{ children }</Text>
 }) 
