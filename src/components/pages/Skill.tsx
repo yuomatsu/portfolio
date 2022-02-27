@@ -5,6 +5,7 @@ import { Box, Text, Wrap, WrapItem } from "@chakra-ui/react";
 import { SkillCard } from "../organisms/skill/SkillCard";
 import { SkillList } from "../data/skill/SkillList";
 import { H2Text } from "../atoms/text/H2Text";
+import { CertificationTable } from "../organisms/skill/CertificationTable";
 
 export const Skill = memo(() => {
     const {frontEndSkills, backEndSkills} = SkillList(); 
@@ -40,6 +41,9 @@ export const Skill = memo(() => {
                 </WrapItem>
             ))}
             </Wrap>
+            <H2Text>Certification</H2Text>
+            <CertificationTable></CertificationTable>
+
         </Box>
     )
 })
