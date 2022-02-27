@@ -14,8 +14,8 @@ type Props = {
 export const SkillCard: VFC<Props> = memo((props) => {
     const { id, name, imageUrl, description } = props;
     return (
-    <Box w="300px" h="400px" bg="white" borderRadius="10px" shadow="md" p={4}>
-        <Stack textAlign="center">
+    <Box w="250px" h={{ base: "300px", md: "400px"}} bg="white" borderRadius="10px" shadow="md" p={4}>
+        <Stack textAlign="center" >
             <Image h="150px" objectFit="cover" src={imageUrl}/>
             <H3Text>{name}</H3Text>
             <Text mt={{ base: 20, md: 100}}>{description}</Text>

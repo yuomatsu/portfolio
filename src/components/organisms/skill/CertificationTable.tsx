@@ -9,27 +9,28 @@ import { Box, Image, Stack, Text,
     Td,
     TableCaption,} from "@chakra-ui/react";
 
+import { CertificationList } from "../../data/skill/Certification";
+
 export const CertificationTable: VFC = memo(() => {
+    const { Certifications } = CertificationList(); 
     return (
-<Table variant='simple'>
-    <Thead>
-        <Tr>
-            <Th>資格名</Th>
-            <Th isNumeric>取得日</Th>
-        </Tr>
-    </Thead>
-    <Tbody>
-        <Tr>
-            <Td>inches</Td>
-            <Td isNumeric>25.4</Td>
-        </Tr>
-    </Tbody>
-    <Tfoot>
-        <Tr>
-            <Th>To convert</Th>
-            <Th isNumeric>multiply by</Th>
-        </Tr>
-    </Tfoot>
-</Table>
+        <>
+            <Table variant='simple'>
+                <Thead>
+                    <Tr>
+                        <Th>資格名</Th>
+                        <Th isNumeric>取得日</Th>
+                    </Tr>
+                </Thead>
+                {Certifications.map((Certification) => (
+                <Tbody>
+                    <Tr>
+                        <Td>{Certification.name}</Td>
+                        <Td isNumeric>{Certification.day}</Td>
+                    </Tr>
+                </Tbody>
+                ))}
+            </Table>
+        </>
     );
 }) 

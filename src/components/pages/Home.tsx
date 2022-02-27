@@ -6,7 +6,7 @@ import { Image, Text } from '@chakra-ui/react';
 
 export const Home: VFC = memo(() => {
     return (
-        <Box mt={{ base: 5, md: 120}} mb={{ base: 5, md: 20}} mr={{ base: 5, md: "auto"}} ml={{ base: 5, md: "auto"}} textAlign="center" backgroundColor="gray.300" maxW="1200px">
+        <Box mt={{ base: 2, md: 120}} mb={{ base: 2, md: 20}} mr={{ base: 5, md: "auto"}} ml={{ base: 5, md: "auto"}} textAlign="center" backgroundColor="gray.300" maxW="1200px">
             <Box mt={{ base: 20, md: 120}} fontSize={{ base: '1.5rem', md: "3rem"}}>
                 <Text>Welcome to my portfolio!</Text>
                 <Text>Thank you!</Text>
