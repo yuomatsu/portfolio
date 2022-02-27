@@ -1,40 +1,46 @@
 import { Skill} from "../../types/skill/skill"
 
 export const SkillList = () => {
-    const frontEndlList = [
+    const frontEndSkills = [
         {
+            "id": 1,
             "name": "HTML5/CSS3",
-            "imgUrl": `${process.env.PUBLIC_URL}/img/html_css.png`,
+            "imageUrl": `${process.env.PUBLIC_URL}/img/html_css.png`,
             "description": "delectus aut autem",
         },
         {
+            "id": 2,
             "name": "Javascript",
-            "imgUrl": `${process.env.PUBLIC_URL}/img/javascript.png`,
+            "imageUrl": `${process.env.PUBLIC_URL}/img/javascript.png`,
             "description": "delectus aut autem",
         },
         {
+            "id": 3,
             "name": "Vue.js",
-            "imgUrl": `${process.env.PUBLIC_URL}/img/vue.png`,
+            "imageUrl": `${process.env.PUBLIC_URL}/img/vue.png`,
             "description": "delectus aut autem",
         },
         {
+            "id": 4,
             "name": "React",
-            "imgUrl": `${process.env.PUBLIC_URL}/img/react.png`,
+            "imageUrl": `${process.env.PUBLIC_URL}/img/react.png`,
             "description": "delectus aut autem",
         },
     ]
-    const backEndlList = [
+    const backEndSkills = [
         {
+            "id": 1,
             "name": "PHP",
-            "imgUrl": `${process.env.PUBLIC_URL}/img/php.png`,
+            "imageUrl": `${process.env.PUBLIC_URL}/img/php.png`,
             "description": "delectus aut autem",
         },
         {
+            "id": 2,
             "name": "PostgresSQL",
-            "imgUrl": `${process.env.PUBLIC_URL}/img/postgresql.png`,
+            "imageUrl": `${process.env.PUBLIC_URL}/img/postgresql.png`,
             "description": "delectus aut autem",
         },
     ]
     
-    return {frontEndlList, backEndlList}
+    return {frontEndSkills, backEndSkills}
 }
