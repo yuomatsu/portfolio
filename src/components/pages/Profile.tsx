@@ -4,6 +4,7 @@ import { Image, Text } from '@chakra-ui/react';
 
 import { H1Text } from "../atoms/text/H1Text";
 import { H2Text } from "../atoms/text/H2Text"
+import { H3Text } from "../atoms/text/H3Text"
 
 export const Profile: VFC = memo(() => {
     return (
@@ -22,16 +23,16 @@ export const Profile: VFC = memo(() => {
                 </Text>
             </Box>
             <Box textAlign="left" mt={{ base: 5, md: 120}}>
-                <H2Text>Age</H2Text>
+                <H3Text>Age</H3Text>
                 <Text>28歳</Text>
-                <H2Text>Hobby</H2Text>
+                <H3Text>Hobby</H3Text>
                 <UnorderedList>
                     <ListItem>テレビゲーム</ListItem>
                     <ListItem>旅行</ListItem>
                     <ListItem>スノーボード</ListItem>
                     <ListItem>読書</ListItem>
                 </UnorderedList>
-                <H2Text>Favorite Food</H2Text>              
+                <H3Text>Favorite Food</H3Text>              
                 <UnorderedList>
                     <ListItem>焼肉</ListItem>
                     <ListItem>コーヒー</ListItem>

@@ -1,7 +1,7 @@
 import { Skill} from "../../types/skill/skill"
 
 export const SkillList = () => {
-    const frontEndSkills = [
+    const frontEndSkills: Skill[] = [
         {
             "id": 1,
             "name": "HTML5/CSS3",
@@ -27,7 +27,7 @@ export const SkillList = () => {
             "description": "delectus aut autem",
         },
     ]
-    const backEndSkills = [
+    const backEndSkills: Skill[] = [
         {
             "id": 1,
             "name": "PHP",
