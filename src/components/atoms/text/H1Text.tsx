@@ -7,5 +7,5 @@ type Props = {
 
 export const H1Text: VFC<Props> = memo((props) => {
     const { children } = props;
-    return <Text as="h1" fontSize={{ base: '2.0rem', md: "3.0rem"}} mt={{ base: 20, md: 120}}>{ children }</Text>
+    return <Text as="h1" textAlign="center" fontSize={{ base: '2.0rem', md: "3.0rem"}} mt={{ base: 20, md: 120}}>{ children }</Text>
 }) 
