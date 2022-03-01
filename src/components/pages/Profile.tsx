@@ -15,8 +15,8 @@ export const Profile: VFC = memo(() => {
             </Box>
             <Text fontSize={{ base: '1.0rem', md: "2.5rem"}}>Web Engineer</Text>
             <Box textAlign="center" mt={{ base: 5, md: 10}}>
-                <Text>
-                    はじめましてyuomatsuと申します。<br />
+                <Text display="inline-block" textAlign="left">
+                    はじめましてyuomatsuです。<br />
                     都内のITコンサルでWebエンジニアとして働いています。<br />
                     フロントエンドとバックエンドどちらの開発も担当しています。<br />
                     より良いサービスを開発・運用できるように日々奮闘しています。<br />

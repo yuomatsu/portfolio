@@ -12,7 +12,7 @@ export const CareerList = () => {
         id: 1,
         date: "~ 2021/07",
         title: "ITコンサルにてフロントエンドエンジニアとして勤務",
-        description: "説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明",
+        description: "フロントエンドエンジニアとしてSaasの開発やクライアントに納品するWebサイトの制作をしています。",
         },
     ]
     return {Careers}
