@@ -25,16 +25,14 @@ export const Header: VFC = memo(() => {
             padding={{base: 3, md: 5 }}
         >
             <Flex as="a" _hover={{cursor: "pointer"}}>
-                <Heading as="h1" fontSize={{ base: "lg", md: 25 }} onClick={onClickHome}>
-                    yuomatsu
-                </Heading>
+                <Heading as="h1" fontSize={{ base: "lg", md: 25 }} onClick={onClickHome}>YU OMATSU</Heading>
             </Flex>
             <Flex align="center" fontSize="sm" display={{ base: "none", md: "flex" }}>
                 <Box pr={4}>
                     <Link onClick={onClickHome}>HOME</Link>
                 </Box>
                 <Box pr={4}>
-                    <Link onClick={onClickProfile}>PLOFILE</Link>
+                    <Link onClick={onClickProfile}>PROFILE</Link>
                 </Box>
                 <Box pr={4}>
                     <Link onClick={onClickSkill}>SKILL</Link>
