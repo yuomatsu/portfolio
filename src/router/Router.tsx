@@ -6,25 +6,25 @@ import {Profile} from "../components/pages/Profile"
 import {Skill} from "../components/pages/Skill"
 import { Career } from "../components/pages/Career";
 import { Page404 } from "../components/pages/Page404";
-import { HeaderLayout } from "../components/templates/HeaderLayout";
+import { HeaderFooterLayout } from "../components/templates/HeaderFooterLayout";
 
 export const Router: VFC = memo(() => {
     return (
         <Switch>
             <Route exact path="/">
-                <HeaderLayout><Home /></HeaderLayout>
+                <HeaderFooterLayout><Home /></HeaderFooterLayout>
             </Route>
             <Route exact path="/profile">
-                <HeaderLayout><Profile /></HeaderLayout>
+                <HeaderFooterLayout><Profile /></HeaderFooterLayout>
             </Route>
             <Route exact path="/skill">
-                <HeaderLayout><Skill /></HeaderLayout>
+                <HeaderFooterLayout><Skill /></HeaderFooterLayout>
             </Route>
                 <Route exact path="/career">
-                <HeaderLayout><Career /></HeaderLayout>
+                <HeaderFooterLayout><Career /></HeaderFooterLayout>
             </Route>
             <Route exact path="*">
-                <HeaderLayout><Page404 /></HeaderLayout>
+                <HeaderFooterLayout><Page404 /></HeaderFooterLayout>
             </Route>
         </Switch>
     )
