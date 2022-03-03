@@ -5,6 +5,7 @@ import { Image, Text } from '@chakra-ui/react';
 import { H1Text } from "../atoms/text/H1Text";
 import { H2Text } from "../atoms/text/H2Text"
 import { H3Text } from "../atoms/text/H3Text"
+import { ProfileCard } from "../organisms/profile/ProfileCard";
 
 export const Profile: VFC = memo(() => {
     return (
@@ -39,6 +40,7 @@ export const Profile: VFC = memo(() => {
                     <ListItem>お酒（ビール、ウィスキー）</ListItem>
                 </UnorderedList>
             </Box>
+            <ProfileCard></ProfileCard>
         </Box>
     )
 }) 

@@ -12,25 +12,29 @@ import { H4Text } from "../../atoms/text/H4Text";
 
 
 export const ProfileCard: VFC = memo(() => {
-    const { Careers } = CareerList();
+    const { Profiles } = ProfileList();
     return (
-        <Box mt={{ base: 10, md: 100}}>
-            <VerticalTimeline className="timeline">
-            {Careers.map((Career) => {
-                return (
-                <VerticalTimelineElement
-                    key={Career.id}
-                    // className="vertical-timeline-element--work vertical-timeline-element-date"
-                    contentStyle={{ background: "#fff", color: "gray.700" }}
-                    contentArrowStyle={{ borderRight: "7px solid  #fff" }}
-                    date={Career.date}
-                >
-                    <H4Text>{Career.title}</H4Text>
-                    <Text>{Career.description}</Text>
-                </VerticalTimelineElement>
-                );
-            })}
-            </VerticalTimeline>
+        <>
+        <Box mt={{ base: 10, md: 100}} textAlign="left">
+            <Box mr={{ base: 0, md: "auto"}} ml={{ base: 0, md: "auto"}}>
+                <Box backgroundColor="white" p={{ base: 5, md: 5}} mt={{ base: 5, md: 5}}>
+                    <Box mb={{ base: 5, md: 5}}>
+                        <Text display="flex" _before={{content:`"Q."`, mr: "1rem"}}>なぜIT業界で働こうと思ったのか？</Text>
+                    </Box>
+                    <Box>
+                        <Text display="flex" _before={{content:`"A."`, mr: "1rem"}}>就活当時、IT技術に興味を持っており、今後の進化にも期待できる分野だと思ったから。</Text>
+                    </Box>
+                </Box>
+                <Box backgroundColor="white" p={{ base: 5, md: 5}} mt={{ base: 5, md: 5}}>
+                    <Box mb={{ base: 5, md: 5}}>
+                        <Text display="flex" _before={{content:`"Q."`, mr: "1rem"}}>なぜIT業界で働こうと思ったのか？</Text>
+                    </Box>
+                    <Box>
+                        <Text display="flex" _before={{content:`"A."`, mr: "1rem"}}>就活当時、IT技術に興味を持っており、今後の進化にも期待できる分野だと思ったから。</Text>
+                    </Box>
+                </Box>
+            </Box>
         </Box>
+        </>
     )
 }) 
