@@ -12,7 +12,7 @@ export const Skill = memo(() => {
     const {frontEndSkills, backEndSkills} = SkillList(); 
 
     return (
-        <Box pr={{ base: 2, md: 20}} pl={{ base: 2, md: 20}} mt={{ base: 5, md: 120}} mb={{ base: 5, md: 20}} mr={{ base: 5, md: "auto"}} ml={{ base: 5, md: "auto"}} textAlign="center" backgroundColor="gray.300" maxW="1200px">
+        <Box pr={{ base: 2, md: 20 }} pl={{ base: 2, md: 20 }} pb={{ base: 100, md: 120 }} mt={{ base: 5, md: 120 }} mb={{ base: 5, md: 20} } mr={{ base: 5, md: "auto" }} ml={{ base: 5, md: "auto"}} textAlign="center" backgroundColor="gray.300" maxW="1200px">
             <H1Text>SKILL</H1Text>
             <H2Text>Frontend</H2Text>
             <Wrap p={{ base: 4, md: 10 }} justify="center">
@@ -42,7 +42,6 @@ export const Skill = memo(() => {
             </Wrap>
             <H2Text>Certification</H2Text>
             <CertificationTable></CertificationTable>
-
         </Box>
     )
 })
