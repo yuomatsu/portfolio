@@ -8,7 +8,7 @@ export const CertificationList = () => {
         },
         {
             "name": "HTML5プロフェッショナル試験",
-            "day": "2022年4月",
+            "day": "2022年04月",
         },
     ]
     return {Certifications}

@@ -14,23 +14,21 @@ import { CertificationList } from "../../data/skill/Certification";
 export const CertificationTable: VFC = memo(() => {
     const { Certifications } = CertificationList(); 
     return (
-        <>
-            <Table variant='simple'>
-                <Thead>
-                    <Tr>
-                        <Th>資格名</Th>
-                        <Th isNumeric>取得日</Th>
-                    </Tr>
-                </Thead>
-                {Certifications.map((Certification) => (
-                <Tbody>
-                    <Tr>
-                        <Td>{Certification.name}</Td>
-                        <Td isNumeric>{Certification.day}</Td>
-                    </Tr>
-                </Tbody>
-                ))}
-            </Table>
-        </>
-    );
+        <Table variant='simple' backgroundColor="#fff">
+            <Thead>
+                <Tr fontSize={{ base: '1.0rem', md: "1.5rem"}}>
+                    <Th>資格名</Th>
+                    <Th isNumeric>取得日</Th>
+                </Tr>
+            </Thead>
+            {Certifications.map((Certification) => (
+            <Tbody>
+                <Tr>
+                    <Td>{Certification.name}</Td>
+                    <Td isNumeric>{Certification.day}</Td>
+                </Tr>
+            </Tbody>
+            ))}
+        </Table>
+);
 }) 
