@@ -1,5 +1,5 @@
 import { memo, useCallback, VFC } from "react";
-import { Box, Flex, Text, Link } from "@chakra-ui/react";
+import { Box, Flex, Link } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { useHistory } from "react-router-dom";
@@ -13,11 +13,12 @@ const onClickTwitter = () => {
     return (
         <Flex
         as="nav"
-        bg="gray.400"
+        bg="#d1d1d1"
         color="gray.700"
         align="center"
         justify="space-between"
-        padding={{base: 3, md: 5 }}>
+        padding={{base: 3, md: 5 }}
+        fontWeight="bold">
             <Box as="a" _hover={{cursor: "pointer"}}>
                 <Link onClick={onClickHome}>© 2022 YU OMATSU</Link>
             </Box>

@@ -11,7 +11,7 @@ import { H4Text } from "../../atoms/text/H4Text";
 export const CareerCard: VFC = memo(() => {
     const { Careers } = CareerList();
     return (
-        <Box mt={{ base: 10, md: 100}}>
+        <Box mt={{ base: 10, md: 100}} textAlign="left">
             <VerticalTimeline className="timeline">
             {Careers.map((Career) => {
                 return (

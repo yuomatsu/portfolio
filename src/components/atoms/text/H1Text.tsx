@@ -12,18 +12,9 @@ export const H1Text: VFC<Props> = memo((props) => {
         as="h1"
         position="relative"
         textAlign="center"
-        fontSize={{ base: '2.5rem', md: "3.0rem"}}
+        fontSize={{ base: '2.75rem', md: "3.25rem"}}
         mt={{ base: 20, md: 50}}
-        _before={{
-            position:"absolute",
-            bottom:"-10px",
-            left: "calc(50% - 30px)",
-            width: "60px",
-            height: "5px",
-            content: "''",
-            borderRadius: "3px",
-            backgroundColor: "#314656"
-        }}
+        display="inline" bg={"linear-gradient(transparent 60%, #a4c1d7 60% 90%, transparent 90%)"}
     >
     { children }
     </Text>

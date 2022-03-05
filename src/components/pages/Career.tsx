@@ -9,7 +9,7 @@ import { PageInner } from "../organisms/layout/PageInner";
 export const Career: VFC = memo(() => {
     return (
         <PageInner>
-            <Box textAlign="left">
+            <Box>
                 <H1Text>CAREER</H1Text>
                 <CareerCard></CareerCard>
             </Box>
