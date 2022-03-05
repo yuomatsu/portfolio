@@ -22,7 +22,7 @@ export const H1Text: VFC<Props> = memo((props) => {
             height: "5px",
             content: "''",
             borderRadius: "3px",
-            backgroundColor: "#000"
+            backgroundColor: "#314656"
         }}
     >
     { children }

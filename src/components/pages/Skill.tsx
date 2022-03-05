@@ -1,5 +1,5 @@
 import { memo, VFC } from "react";
-import { Wrap, WrapItem } from "@chakra-ui/react";
+import { Box, Wrap, WrapItem } from "@chakra-ui/react";
 
 
 import { SkillCard } from "../organisms/skill/SkillCard";
@@ -15,34 +15,36 @@ export const Skill = memo(() => {
     return (
         <PageInner>
             <H1Text>SKILL</H1Text>
-            <H2Text>Frontend</H2Text>
-            <Wrap p={{ base: 4, md: 10 }} justify="center">
-                {frontEndSkills.map((frontEndSkill) => (
-                <WrapItem key={frontEndSkill.id}>
-                <SkillCard
-                    id={frontEndSkill.id}
-                    name={frontEndSkill.name}
-                    imageUrl={frontEndSkill.imageUrl}
-                    description={frontEndSkill.description}
-                />
-                </WrapItem>
-            ))}
-            </Wrap>
-            <H2Text>Backend</H2Text>
-            <Wrap p={{ base: 4, md: 10 }} justify="center">
-                {backEndSkills.map((backEndSkill) => (
-                <WrapItem key={backEndSkill.id}>
-                <SkillCard
-                    id={backEndSkill.id}
-                    name={backEndSkill.name}
-                    imageUrl={backEndSkill.imageUrl}
-                    description={backEndSkill.description}
-                />
-                </WrapItem>
-            ))}
-            </Wrap>
-            <H2Text>Certification</H2Text>
-            <CertificationTable></CertificationTable>
+            <Box mt={{ base: 100, md: 120}} mb={{ base: 5, md: 20}} mr={{ base: 0, md: "auto"}} ml={{ base: 0, md: "auto"}}>
+                <H2Text>Frontend</H2Text>
+                <Wrap p={{ base: 4, md: 10 }} justify="center">
+                    {frontEndSkills.map((frontEndSkill) => (
+                    <WrapItem key={frontEndSkill.id}>
+                    <SkillCard
+                        id={frontEndSkill.id}
+                        name={frontEndSkill.name}
+                        imageUrl={frontEndSkill.imageUrl}
+                        description={frontEndSkill.description}
+                    />
+                    </WrapItem>
+                ))}
+                </Wrap>
+                <H2Text>Backend</H2Text>
+                <Wrap p={{ base: 4, md: 10 }} justify="center">
+                    {backEndSkills.map((backEndSkill) => (
+                    <WrapItem key={backEndSkill.id}>
+                    <SkillCard
+                        id={backEndSkill.id}
+                        name={backEndSkill.name}
+                        imageUrl={backEndSkill.imageUrl}
+                        description={backEndSkill.description}
+                    />
+                    </WrapItem>
+                ))}
+                </Wrap>
+                <H2Text>Certification</H2Text>
+                <CertificationTable></CertificationTable>
+            </Box>
         </PageInner>
     )
 })
