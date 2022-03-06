@@ -1,5 +1,7 @@
 import { memo, VFC } from "react";
 import { Button, Drawer, DrawerBody, DrawerContent, DrawerOverlay } from "@chakra-ui/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 type Props = {
     onClose: () => void;
@@ -8,10 +10,11 @@ type Props = {
     onClickProfile: () => void;
     onClickSkill: () => void;
     onClickCareer: () => void;
+    onClickTwitter: () => void;
 }
 
 export const MenuDrawer: VFC<Props> = memo((props) => {
-    const { onClose, isOpen, onClickHome, onClickProfile, onClickSkill, onClickCareer } = props;
+    const { onClose, isOpen, onClickHome, onClickProfile, onClickSkill, onClickCareer, onClickTwitter } = props;
     return (
         <Drawer placement="left" size="xs" onClose={onClose} isOpen={isOpen}>
             <DrawerOverlay>
@@ -21,25 +24,36 @@ export const MenuDrawer: VFC<Props> = memo((props) => {
                             onClick={() => {
                                 onClickHome()
                                 onClose()
-                            }}>HOME
+                            }}
+                        >HOME
                         </Button>
                         <Button w="100%" 
                             onClick={() => {
                                 onClickProfile()
                                 onClose()
-                            }}>PROFILE
+                            }}
+                        >PROFILE
                         </Button>
                         <Button w="100%"
                             onClick={() => {
                                 onClickSkill()
                                 onClose()
-                            }}>SKILL
+                            }}
+                        >SKILL
                         </Button>
                         <Button w="100%"
                             onClick={() => {
                                 onClickCareer()
                                 onClose()
-                            }}>CAREER
+                            }}
+                        >CAREER
+                        </Button>
+                        <Button w="100%"
+                            onClick={() => {
+                                onClickTwitter()
+                                onClose()
+                            }}
+                        ><FontAwesomeIcon icon={faTwitter} />
                         </Button>
                     </DrawerBody>
                 </DrawerContent>
