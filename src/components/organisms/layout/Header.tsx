@@ -1,7 +1,7 @@
 import { memo, useCallback, VFC } from "react";
 import { Box, Flex, Heading, Link, useDisclosure } from "@chakra-ui/react";
 
-import {MenuIconButton} from "../../atoms/button/MenuIconButton"
+import { MenuIconButton } from "../../atoms/button/MenuIconButton"
 import { MenuDrawer } from "../../molecules/MenuDrawer";
 import { useHistory } from "react-router-dom";
 
@@ -9,10 +9,10 @@ export const Header: VFC = memo(() => {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const history = useHistory();
 
-    const onClickHome = useCallback(() => history.push("/"), []);
-    const onClickProfile = useCallback(() => history.push("/profile"), []);
-    const onClickSkill = useCallback(() => history.push("/skill"), []);
-    const onClickCareer = useCallback(() => history.push("/career"), []);
+    const onClickHome = useCallback(() => history.push("/"), [history]);
+    const onClickProfile = useCallback(() => history.push("/profile"), [history]);
+    const onClickSkill = useCallback(() => history.push("/skill"), [history]);
+    const onClickCareer = useCallback(() => history.push("/career"), [history]);
 
     return (
         <>
@@ -49,7 +49,8 @@ export const Header: VFC = memo(() => {
             onClickHome={onClickHome}
             onClickProfile={onClickProfile}
             onClickSkill={onClickSkill}
-            onClickCareer={onClickCareer}/>
+            onClickCareer={onClickCareer}
+        />
         </>
         
     )
