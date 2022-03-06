@@ -3,8 +3,6 @@ import { Box, ListItem, UnorderedList } from "@chakra-ui/layout";
 import { Image, Text } from '@chakra-ui/react';
 
 import { H1Text } from "../atoms/text/H1Text";
-import { H2Text } from "../atoms/text/H2Text"
-import { H3Text } from "../atoms/text/H3Text"
 import { ProfileCard } from "../organisms/profile/ProfileCard";
 import { PageInner } from "../organisms/layout/PageInner";
 

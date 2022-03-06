@@ -1,7 +1,8 @@
-import { Career } from "../../types/career/career";
+import { Profile } from "../../types/profile/profile";
 
 export const ProfileList = () => {
-    const Profiles = [
+
+    const Profiles: Profile[] = [
         {
             id: 0,
             question: "年齢は？",
@@ -10,7 +11,7 @@ export const ProfileList = () => {
         {
             id: 1,
             question: "なぜIT業界で働こうと思ったのか？",
-            answer: "就活当時、IT技術に興味を持っており、今後の進化にも期待できる分野だと思ったから。",
+            answer: "就活当時、IT技術に興味を持っており、今後さらに需要の伸びる業界だと思ったから。",
         },
         {
             id: 2,
@@ -20,12 +21,12 @@ export const ProfileList = () => {
         {
             id: 3,
             question: "趣味は？",
-            answer: "ゲーム、旅行、スノーボード、読書、IT系の勉強",
+            answer: "ゲーム、旅行、体を動かすこと全般、読書、IT系の勉強",
         },
         {
             id: 4,
             question: "好きな食べ物は？",
-            answer: "焼肉、お酒（ビール、ハイボール、レモンサワー）、コーヒー",
+            answer: "焼肉、お酒、コーヒー",
         },
         {
             id: 5,

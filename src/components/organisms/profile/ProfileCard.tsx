@@ -1,16 +1,8 @@
 import { Box, Text } from "@chakra-ui/react";
 import { memo, VFC } from "react";
-import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import { CareerList } from "../../data/career/CareerList"
 import { ProfileList } from "../../data/profile/ProfileList"
-import { H4Text } from "../../atoms/text/H4Text";
-import { Profile } from "../../pages/Profile";
-
 
 export const ProfileCard: VFC = memo(() => {
     const { Profiles } = ProfileList();

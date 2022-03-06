@@ -4,7 +4,6 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import "react-vertical-timeline-component/style.min.css";
 
 import { CareerList } from "../../data/career/CareerList"
-import { Career } from "../../types/career/career";
 import { H4Text } from "../../atoms/text/H4Text";
 
 
