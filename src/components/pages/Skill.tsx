@@ -17,7 +17,7 @@ export const Skill = memo(() => {
             <H1Text>SKILL</H1Text>
             <Box mt={{ base: 100, md: 120}} mb={{ base: 5, md: 20}} mr={{ base: 0, md: "auto"}} ml={{ base: 0, md: "auto"}}>
                 <H2Text>Frontend</H2Text>
-                <Wrap p={{ base: 4, md: 10 }} justify="center">
+                <Wrap mt={{ base: 10, md: 100}} mb={{ base: 20, md: 120}} justify="center">
                     {frontEndSkills.map((frontEndSkill) => (
                     <WrapItem key={frontEndSkill.id}>
                     <SkillCard
@@ -30,7 +30,7 @@ export const Skill = memo(() => {
                 ))}
                 </Wrap>
                 <H2Text>Backend</H2Text>
-                <Wrap p={{ base: 4, md: 10 }} justify="center">
+                <Wrap mt={{ base: 10, md: 100}} mb={{ base: 20, md: 120}} justify="center">
                     {backEndSkills.map((backEndSkill) => (
                     <WrapItem key={backEndSkill.id}>
                     <SkillCard
