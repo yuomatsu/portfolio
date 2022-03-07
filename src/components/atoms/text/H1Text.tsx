@@ -15,6 +15,7 @@ export const H1Text: VFC<Props> = memo((props) => {
         fontSize={{ base: '2.75rem', md: "3.25rem"}}
         mt={{ base: 20, md: 50}}
         display="inline" bg={"linear-gradient(transparent 60%, #a4c1d7 60% 90%, transparent 90%)"}
+        fontWeight="bold"
     >
     { children }
     </Text>

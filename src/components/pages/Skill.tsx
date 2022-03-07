@@ -1,5 +1,5 @@
 import { memo, VFC } from "react";
-import { Box, Wrap, WrapItem } from "@chakra-ui/react";
+import { Box, Text, Wrap, WrapItem } from "@chakra-ui/react";
 
 
 import { SkillCard } from "../organisms/skill/SkillCard";

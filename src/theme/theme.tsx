@@ -6,7 +6,8 @@ const theme = extendTheme({
             body: {
                 // backgroundColor: "#f5f1ee",
                 backgroundColor: "#efefef",
-                color: "#314656"
+                color: "#314656",
+                lineHeight: "2.0"
             }
         }
     }

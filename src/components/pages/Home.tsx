@@ -8,9 +8,9 @@ import { PageInner } from "../organisms/layout/PageInner";
 export const Home: VFC = memo(() => {
     return (
         <PageInner>
-            <Box mt={{ base: 20, md: 120}} fontSize={{ base: '2.0rem', md: "3.0rem"}}>
-                <Text display="inline" bg={"linear-gradient(transparent 60%, #a4c1d7 60% 90%, transparent 90%)"}>Welcome to my portfolio</Text><br />
-                <Text display="inline" bg={"linear-gradient(transparent 60%, #a4c1d7 60% 90%, transparent 90%)"}>Thank you!</Text>
+            <Box mt={{ base: 20, md: 120}} fontSize={{ base: '2.0rem', md: "3.0rem"}} >
+                <Text display="inline" bg={"linear-gradient(transparent 60%, #a4c1d7 60% 90%, transparent 90%)"} lineHeight="1.0"><Text as="span" fontSize={{ base: '2.5rem', md: "4.0rem"}} fontWeight="bold">W</Text>elcome to my portfolio</Text><br />
+                <Text display="inline" bg={"linear-gradient(transparent 60%, #a4c1d7 60% 90%, transparent 90%)"}><Text as="span" fontSize={{ base: '2.5rem', md: "4.0rem"}} fontWeight="bold">T</Text>hank you!</Text>
             </Box>
             <Box mt={{ base: 20, md: 120}} mb={{ base: 20, md: 0 }} w="100%" h={{ base: "auto", md: "900px"}} position={{ base: "static", md: "relative"}}>
                 {/* <Box position={{ base: "static", md: "relative"}} w="100%" h="700px"> */}
