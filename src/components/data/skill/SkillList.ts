@@ -18,13 +18,19 @@ export const SkillList = () => {
             "id": 3,
             "name": "Vue.js",
             "imageUrl": `${process.env.PUBLIC_URL}/img/vue.png`,
-            "description": "現職でのSaaS構築に利用しています",
+            "description": "現職でのSaaS構築に利用しています。",
         },
         {
             "id": 4,
             "name": "React",
             "imageUrl": `${process.env.PUBLIC_URL}/img/react.png`,
-            "description": "本ポートフォリオをReactで構築しました。実務経験はありません。",
+            "description": "本ポートフォリオをReactとTypeScriptで構築しました。実務経験はありません。",
+        },
+        {
+            "id": 5,
+            "name": "TypeScript",
+            "imageUrl": `${process.env.PUBLIC_URL}/img/typescript.png`,
+            "description": "本ポートフォリオをReactとTypeScriptで構築しました。実務経験はありません。",
         },
     ]
     const backEndSkills: Skill[] = [
@@ -37,7 +43,7 @@ export const SkillList = () => {
         {
             "id": 2,
             "name": "PostgresQL",
-            "imageUrl": `${process.env.PUBLIC_URL}/img/postgresql.png`,
+            "imageUrl": `${process.env.PUBLIC_URL}/img/postgresql3.png`,
             "description": "現職でPostgresQLを利用しています。操作はphpMyAdminで行なっています。",
         },
     ]
