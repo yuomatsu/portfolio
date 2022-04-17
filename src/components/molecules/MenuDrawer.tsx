@@ -10,11 +10,12 @@ type Props = {
     onClickProfile: () => void;
     onClickSkill: () => void;
     onClickCareer: () => void;
-    onClickTwitter: () => void;
+    // onClickTwitter: () => void;
 }
 
 export const MenuDrawer: VFC<Props> = memo((props) => {
-    const { onClose, isOpen, onClickHome, onClickProfile, onClickSkill, onClickCareer, onClickTwitter } = props;
+    // const { onClose, isOpen, onClickHome, onClickProfile, onClickSkill, onClickCareer, onClickTwitter } = props;
+    const { onClose, isOpen, onClickHome, onClickProfile, onClickSkill, onClickCareer } = props;
     return (
         <Drawer placement="left" size="xs" onClose={onClose} isOpen={isOpen}>
             <DrawerOverlay>
@@ -48,13 +49,13 @@ export const MenuDrawer: VFC<Props> = memo((props) => {
                             }}
                         >CAREER
                         </Button>
-                        <Button w="100%"
+                        {/* <Button w="100%"
                             onClick={() => {
                                 onClickTwitter()
                                 onClose()
                             }}
                         ><FontAwesomeIcon icon={faTwitter} />
-                        </Button>
+                        </Button> */}
                     </DrawerBody>
                 </DrawerContent>
             </DrawerOverlay>
