@@ -15,9 +15,9 @@ export const Header: VFC = memo(() => {
     const onClickProfile = useCallback(() => history.push("/profile"), [history]);
     const onClickSkill = useCallback(() => history.push("/skill"), [history]);
     const onClickCareer = useCallback(() => history.push("/career"), [history]);
-    const onClickTwitter = () => {
-        window.open("https://twitter.com/yuomatsu", '_blank');
-    }
+    // const onClickTwitter = () => {
+    //     window.open("https://twitter.com/yuomatsu", '_blank');
+    // }
 
     return (
         <>
@@ -33,9 +33,9 @@ export const Header: VFC = memo(() => {
                 <Heading as="h1" fontSize={{ base: "lg", md: 25 }} onClick={onClickHome}>YU OMATSU</Heading>
             </Flex>
             <Flex align="center" fontSize="sm" display={{ base: "none", md: "flex" }} fontWeight="bold">
-                <Box pr={4} _hover={{cursor: "pointer"}}>
+                {/* <Box pr={4} _hover={{cursor: "pointer"}}>
                     <Link onClick={onClickTwitter}><FontAwesomeIcon icon={faTwitter} /></Link>
-                </Box>
+                </Box> */}
                 <Box pr={4}>
                     <Link onClick={onClickHome}>HOME</Link>
                 </Box>
@@ -58,7 +58,7 @@ export const Header: VFC = memo(() => {
             onClickProfile={onClickProfile}
             onClickSkill={onClickSkill}
             onClickCareer={onClickCareer}
-            onClickTwitter={onClickTwitter}
+            // onClickTwitter={onClickTwitter}
         />
         </>
         

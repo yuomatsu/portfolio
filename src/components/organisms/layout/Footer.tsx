@@ -7,9 +7,9 @@ import { useHistory } from "react-router-dom";
 export const Footer: VFC = memo(() => {
     const history = useHistory();
     const onClickHome = useCallback(() => history.push("/"), []);
-    const onClickTwitter = () => {
-        window.open("https://twitter.com/yuomatsu", '_blank');
-    }
+    // const onClickTwitter = () => {
+    //     window.open("https://twitter.com/yuomatsu", '_blank');
+    // }
     return (
         <Flex
         as="footer"
@@ -22,9 +22,9 @@ export const Footer: VFC = memo(() => {
             <Box _hover={{cursor: "pointer"}}>
                 <Link as="small" onClick={onClickHome}>© 2022 YU OMATSU</Link>
             </Box>
-            <Box _hover={{cursor: "pointer"}}>
+            {/* <Box _hover={{cursor: "pointer"}}>
                 <Link onClick={onClickTwitter}><FontAwesomeIcon icon={faTwitter} /></Link>
-            </Box>
+            </Box> */}
         </Flex>
     )
 }) 
